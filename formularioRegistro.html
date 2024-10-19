@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/png" href="imagenes/ciencias.jpg">
+<style >
+
+    body{
+        margin: 0;
+    }
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #333333;
+}
+thead{
+    background-color: #2c3050;
+    color: white;
+}
+
+td{
+    background-color: #f4f4f9;
+    color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+fieldset{
+    
+    border: 2px solid #2c3e50;
+    padding: 10px;
+    border-radius: 5px;
+    color:#f7f9fc;
+    margin-bottom: 15px;
+
+}
+fieldset.radio{
+    width: 700px;
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border:2px solid #2c3050;
+}
+fieldset.buttons{
+    width: 700px;
+    margin:0 auto;
+    padding: 5px;
+    border-radius: 1px;
+    border:2px solid #2c3050;
+    text-align: center;
+}
+
+legend{
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="submit"],input[type="reset"],button[type="button"],input[type="radio"]{
+    
+    width: 80px;
+    background-color: #2c3050;
+    color:white;
+    border: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover,button[type="button"]:hover,input[type="radio"]:hover{
+    background-color: #2c3050;
+
+}
+
+
+input, select,button{
+    background-color: #ecf0f1;
+    border:1px solid #ccc;
+    padding: 5px;
+    color: #333333;
+}
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+
+</head>
+<body>
+    <!-- Registro de Estudiantes -->
+<div>
+        <table border="" bgcolor="B9EFEF">
+        <thead bgcolor="#2c3e50"><th width="690px" ><font color="white">
+        Registro de Estudiantes</font></th></thead>
+        <tr>
+            <td bgcolor="#celeste" size="100px"><br>
+                <form name="frm" action=""method="post">
+                        <fieldset>
+                        <!--Datos Personales-->
+                        <legend align="center"><b>Datos Personales</b></legend>
+                        <label for="tipo"><font color= "#2c3e50" face="Tahoma">DNI :</font></label>
+                        <input type="number" name="number" id="number">&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        <label for="login"><font color="#2c3e50" face="Tahoma">Apellidos</font> :</font></label>
+                        <input type="text" id="name" name="apellidos"><br><br>
+
+                        <label for="login"><font color="#2c3e50" face="Tahoma">Nombres</font> :</font></label>
+                        <input type="text" id="login" name="login">    
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                        <label for="login"><font color="#2c3e50" face="Tahoma">Dirección :</font></label>
+                        <input type="text" value=""><br><br>            
+                        
+                        <label for="login"><font color="#2c3e50" face="Tahoma">Genero :</font></label>
+                        <select name="Genero" id="Genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        <select>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
+                        <label for="login"><font color="#2c3e50" face="Tahoma">Fecha de Nacimiento :</font></label>
+                        <input type="date" name="date"><br><br>            
+
+                    </fieldset><br> 
+                        <!--Datos Academicos-->
+                        <fieldset>
+                            <legend align="center"><b>Datos Academicos</b></legend>
+                            <label for="tipo"><font color= "#2c3e50" face="Tahoma">Código :</font></label>
+                            <input type="number" name="number" id="number">&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;
+
+                            <label for="login"><font color="#2c3e50" face="Tahoma">Facultad</font> :</font></label>
+                            <select name="facultad" id="facultad">
+
+                                <option value="Ciencias">Ciencias</option>
+                                <option value="Ciencias del Ambiente">Ciencias del Ambiente</option>
+                                <option value="Ciencias Médicas">Ciencias Médicas</option>
+                                <option value="Economía y Contabilidad">Economía y Contabilidad</option>
+                                <option value="Administración y Turismo">Administración y Turismo</option>
+                                <option value="Ciencias Agrarias">Ciencias Agrarias</option>
+                                <option value="Ingeniería Civil">Ingeniería Civil</option>
+                                <option value="Ingeniería de Minas, Geología y Metalurgia">Ingeniería de Minas, Geología y Metalurgia</option>
+                                <option value="Derecho y Ciencias Políticas">Derecho y Ciencias Políticas</option>
+                                <option value="Ingeniería de Industrias Alimentarias">Ingeniería de Industrias Alimentarias</option>
+                                <option value="Ciencias Sociales, Educación y Comunicación">Ciencias Sociales, Educación y Comunicación</option>
+
+
+                            </select><br><br>
+
+                            <label for="login"><font color="#2c3e50" face="Tahoma">Escuela</font> :</font></label>
+                            <input type="search" name="busquedafacultades " list="listaEscuela" size="45" >
+                            
+                            <datalist id="listaEscuela">
+                                <option value="Ingeniería Agrícola"></option>
+                                <option value="Ingeniería Agronómica"></option>
+                                <option value="Ingeniería Ambiental"></option>
+                                <option value="Arquitectura y Urbanismo"></option>
+                                <option value="Ingeniería Civil"></option>
+                                <option value="Estadística e Informática"></option>
+                                <option value="Ingeniería Industrial"></option>
+                                <option value="Ingeniería de Industrias Alimentarias"></option>
+                                <option value="Ingeniería de Minas"></option>
+                                <option value="Ingeniería Sanitaria"></option>
+                                <option value="Ingeniería de Sistemas e Informática"></option>
+                                <option value="Matemática"></option>
+                                <option value="Enfermería"></option>
+                                <option value="Obstetricia"></option>
+                                <option value="Administración"></option>
+                                <option value="Economía"></option>
+                                <option value="Turismo"></option>
+                                <option value="Contabilidad"></option>
+                                <option value="Arqueología"></option>
+                                <option value="Ciencias de la Comunicación"></option>
+                                <option value="Comunicación Lingüística y Literatura"></option>
+                                <option value="Derecho y Ciencias Políticas"></option>
+                                <option value="Educación Primaria y Educación Bilingüe Intercultural"></option>
+                                <option value="Lengua Extranjera: Inglés"></option>
+                                <option value="Educación Física y Deporte"></option>
+                            </datalist>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                            <label for="login"><font color="#2c3e50" face="Tahoma">Expediente de Ingreso</font> :</font></label>
+                            <input type="file" id="login" name="Seleccionar Archivo"><br><br>
+                            
+                            <fieldset class="radio">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="login"><font color="#2c3e50" face="Tahoma">CPU </font> </label>
+                                <input type="Radio" value="radio1" name="ingreso">           
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="login"><font color="#2c3e50" face="Tahoma">Ordinario </font> </label>
+                                <input type="Radio" value="radio1" name="ingreso">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="login"><font color="#2c3e50" face="Tahoma">Extraordinario </font> </label>
+                                <input type="Radio" value="radio1" name="ingreso">
+                            </fieldset><br> 
+                            
+                            
+                        </fieldset><br> 
+    
+                        <!--Botones-->
+                        <fieldset class="buttons">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" value="Aceptar">           
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" value="Modificar">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="submit" value="Eliminar">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="reset" value="Cancelar">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" onclick="window.close()">Salir</button>
+                        </fieldset><br> 
+                    </form>
+                </td>
+            </tr>
+        </table>
+</div><br><br>
+    
+</body>
+</html>
