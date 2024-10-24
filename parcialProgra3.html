@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <!-- Registro de Propietarios -->
+    <div>
+        <table border="1" bgcolor="B9EFEF">
+            <thead bgcolor="#2c3e50">
+                <th width="690px">
+                    <font color="white">Registro de Propietarios</font>
+                </th>
+            </thead>
+            <tr>
+                <td><br>
+                    <form name="frmPropietarios" action="" method="post">
+                        <fieldset>
+                            <legend align="center"><b>Datos Personales</b></legend>
+                            <label for="dni"><font color="#2c3e50">DNI :</font></label>
+                            <input type="number" name="dni" id="dni">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                            <label for="apellidos"><font color="#2c3e50">Apellidos :</font></label>
+                            <input type="text" id="apellidos" name="apellidos"><br><br>
+
+                            <label for="nombres"><font color="#2c3e50">Nombres :</font></label>
+                            <input type="text" id="nombres" name="nombres">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="direccion"><font color="#2c3e50">Dirección :</font></label>
+                            <input type="text" id="direccion" name="direccion"><br><br>
+
+                            <label for="genero"><font color="#2c3e50">Género :</font></label>
+                            <select name="genero" id="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="fecha_nacimiento"><font color="#2c3e50">Fecha de Nacimiento :</font></label>
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+
+                            <label for="telefono"><font color="#2c3e50">Teléfono :</font></label>
+                            <input type="tel" id="telefono" name="telefono"><br><br>
+                        </fieldset><br>
+
+                        <!-- Buscador de Propietarios -->
+                        <fieldset>
+                            <legend align="center"><b>Buscar Propietarios</b></legend>
+                            <label for="buscar_propietario"><font color="#2c3e50">Buscar por DNI o Nombre:</font></label>
+                            <input type="search" id="buscar_propietario" name="buscar_propietario">
+                            <button type="button">Buscar</button>
+                        </fieldset><br>
+                        
+                        <!--Botones-->
+                        <fieldset class="buttons">
+                            <input type="submit" value="Aceptar">
+                            <input type="submit" value="Modificar">
+                            <input type="submit" value="Eliminar">
+                            <input type="reset" value="Cancelar">
+                            <button type="button" onclick="window.close()">Salir</button>
+                        </fieldset><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div><br><br>
+
+    <!-- Registro de Parcelas -->
+    <div>
+        <table border="1" bgcolor="B9EFEF">
+            <thead bgcolor="#2c3e50">
+                <th width="690px">
+                    <font color="white">Registro de Parcelas</font>
+                </th>
+            </thead>
+            <tr>
+                <td><br>
+                    <form name="frmParcelas" action="" method="post">
+                        <fieldset>
+                            <legend align="center"><b>Datos de la Parcela</b></legend>
+                            <label for="parcela"><font color="#2c3e50">Nombre de la Parcela :</font></label>
+                            <input type="text" name="parcela" id="parcela">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="largo"><font color="#2c3e50">Largo (m) :</font></label>
+                            <input type="number" name="largo" id="largo"><br><br>
+
+                            <label for="ancho"><font color="#2c3e50">Ancho (m) :</font></label>
+                            <input type="number" name="ancho" id="ancho">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="provincia"><font color="#2c3e50">Provincia :</font></label>
+                            <select name="provincia" id="provincia">
+                                <option value="Lima">Lima</option>
+                                <option value="Cusco">Cusco</option>
+                            </select><br><br>
+
+                            <label for="zona"><font color="#2c3e50">Zona :</font></label>
+                            <select name="zona" id="zona">
+                                <option value="zona1">Zona 1</option>
+                                <option value="zona2">Zona 2</option>
+                            </select><br><br>
+
+                            <label for="propietario"><font color="#2c3e50">Propietario :</font></label>
+                            <input type="text" id="propietario" name="propietario"><br><br>
+                        </fieldset><br>
+
+                        <!-- Buscador de Parcelas -->
+                        <fieldset>
+                            <legend align="center"><b>Buscar Parcelas</b></legend>
+                            <label for="buscar_parcela"><font color="#2c3e50">Buscar por Nombre de Parcela o Propietario:</font></label>
+                            <input type="search" id="buscar_parcela" name="buscar_parcela">
+                            <button type="button">Buscar</button>
+                        </fieldset><br>
+
+                        <!--Botones-->
+                        <fieldset class="buttons">
+                            <input type="submit" value="Aceptar">
+                            <input type="submit" value="Modificar">
+                            <input type="submit" value="Eliminar">
+                            <input type="reset" value="Cancelar">
+                            <button type="button" onclick="window.close()">Salir</button>
+                        </fieldset><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div><br><br>
+
+    <!-- Registro de Actividades -->
+    <div>
+        <table border="1" bgcolor="B9EFEF">
+            <thead bgcolor="#2c3e50">
+                <th width="690px">
+                    <font color="white">Registro de Actividades</font>
+                </th>
+            </thead>
+            <tr>
+                <td><br>
+                    <form name="frmActividades" action="" method="post">
+                        <fieldset>
+                            <legend align="center"><b>Datos de la Actividad</b></legend>
+                            <label for="actividad"><font color="#2c3e50">Actividad :</font></label>
+                            <input type="text" name="actividad" id="actividad">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="costo"><font color="#2c3e50">Costo (S/) :</font></label>
+                            <input type="number" name="costo" id="costo"><br><br>
+
+                            <label for="recurso"><font color="#2c3e50">Recurso utilizado :</font></label>
+                            <input type="text" name="recurso" id="recurso"><br><br>
+
+                            <label for="cultivo"><font color="#2c3e50">Cultivo :</font></label>
+                            <input type="text" id="cultivo" name="cultivo"><br><br>
+                        </fieldset><br>
+
+                        <!-- Buscador de Actividades -->
+                        <fieldset>
+                            <legend align="center"><b>Buscar Actividades</b></legend>
+                            <label for="buscar_actividad"><font color="#2c3e50">Buscar por Actividad o Cultivo:</font></label>
+                            <input type="search" id="buscar_actividad" name="buscar_actividad">
+                            <button type="button">Buscar</button>
+                        </fieldset><br>
+
+                        <!--Botones-->
+                        <fieldset class="buttons">
+                            <input type="submit" value="Aceptar">
+                            <input type="submit" value="Modificar">
+                            <input type="submit" value="Eliminar">
+                            <input type="reset" value="Cancelar">
+                            <button type="button" onclick="window.close()">Salir</button>
+                        </fieldset><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div><br><br>
+
+    <!-- Registro de Cultivos -->
+    <div>
+        <table border="1" bgcolor="B9EFEF">
+            <thead bgcolor="#2c3e50">
+                <th width="690px">
+                    <font color="white">Registro de Cultivos</font>
+                </th>
+            </thead>
+            <tr>
+                <td><br>
+                    <form name="frmCultivos" action="" method="post">
+                        <fieldset>
+                            <legend align="center"><b>Datos del Cultivo</b></legend>
+                            <label for="cultivo"><font color="#2c3e50">Nombre del Cultivo :</font></label>
+                            <input type="text" name="cultivo" id="cultivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <label for="cantidad"><font color="#2c3e50">Cantidad Cosechada :</font></label>
+                            <input type="number" name="cantidad" id="cantidad"><br><br>
+
+                            <label for="precio"><font color="#2c3e50">Precio de Venta (S/) :</font></label>
+                            <input type="number" name="precio" id="precio"><br><br>
+
+                            <label for="parcela"><font color="#2c3e50">Parcela :</font></label>
+                            <input type="text" id="parcela" name="parcela"><br><br>
+                        </fieldset><br>
+
+                        <!-- Buscador de Cultivos -->
+                        <fieldset>
+                            <legend align="center"><b>Buscar Cultivos</b></legend>
+                            <label for="buscar_cultivo"><font color="#2c3e50">Buscar por Nombre de Cultivo o Parcela:</font></label>
+                            <input type="search" id="buscar_cultivo" name="buscar_cultivo">
+                            <button type="button">Buscar</button>
+                        </fieldset><br>
+
+                        <!--Botones-->
+                        <fieldset class="buttons">
+                            <input type="submit" value="Aceptar">
+                            <input type="submit" value="Modificar">
+                            <input type="submit" value="Eliminar">
+                            <input type="reset" value="Cancelar">
+                            <button type="button" onclick="window.close()">Salir</button>
+                        </fieldset><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div><br><br>
+
+</body>
+</html>
